@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1><a href="index.html">На головну</a></h1>
+	<p>З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, у якої
+		кількість цукерок є більшою, або вивести, що кількість однакова.</p>
+	<script>
+		const childName1 = prompt("Enter 1st child`s name")
+		const candyNumberChild1 = parseInt(prompt("Enter the amount of 1st child`s candys"))
+		const childName2 = prompt("Enter 2st child`s name")
+		const candyNumberChild2 = parseInt(prompt("Enter the amount of 2st child`s candys"))
+
+		
+		if (candyNumberChild1 > candyNumberChild2)
+			document.write(`${childName1} has more candies`)
+		else if (candyNumberChild1 === candyNumberChild2)
+			document.write(`${childName1} and ${childName2} have the same quantity of candies `)
+		else
+			document.write(`${childName2} has more candies`)
+	</script>
+</body>
+
+</html>

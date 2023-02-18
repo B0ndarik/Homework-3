@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1><a href="index.html">На головну</a></h1>
+	<p>Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
+	</p>
+
+	<script>
+		const randomMin = 1
+		const randomMax = 5
+		const randomNumber = Math.floor(Math.random() * (randomMax - randomMin + 1)) + randomMin
+
+		console.log(randomNumber)
+
+		let guessAttempt = prompt("Try to guess the number between 1-5")
+
+
+		if (guessAttempt == 1 || guessAttempt == 2 || guessAttempt == 3 || guessAttempt == 4 || guessAttempt == 5) {
+			if (guessAttempt == randomNumber)
+				document.write("You are right")
+			else {
+				guessAttempt = prompt("Wrong number, one more try")
+				if (guessAttempt == 1 || guessAttempt == 2 || guessAttempt == 3 || guessAttempt == 4 || guessAttempt == 5) {
+					if (guessAttempt == randomNumber)
+						document.write("You are right")
+					else
+						document.write("Wrong number")
+				} else document.write("Wrong input value")
+			}
+		} else document.write("Wrong input value")
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1><a href="index.html">На головну</a></h1>
+	<p>З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль).
+		Вивести на
+		екран назву транспортного засобу, яким він може керувати.</p>
+	<script>
+		const driverCat = prompt("Enter drivers license category").toUpperCase()
+		const categoryA = "A"
+		const categoryB = "B"
+		const categoryC = "C"
+
+		if (driverCat === categoryA)
+			document.write("Motorcycle")
+		else if (driverCat === categoryB)
+			document.write("Automobile")
+		else if (driverCat === categoryC)
+			document.write("Truck")
+	</script>
+</body>
+
+</html>

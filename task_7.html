@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1><a href="index.html">На головну</a></h1>
+	<p>З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься</p>
+	<script>
+		const monthNumber = parseInt(prompt("Enter month number"))
+
+		const firstSpringMonth = 3
+		const firstSummerMonth = 6
+		const firstAutumnMonth = 9
+		const firstWinterMonth = 12
+
+		if (monthNumber < firstSpringMonth || monthNumber === firstWinterMonth)
+			document.write("Winter")
+		else if (monthNumber < firstSummerMonth)
+			document.write("Spring")
+		else if (monthNumber < firstAutumnMonth)
+			document.write("Summer")
+		else if (monthNumber < firstWinterMonth)
+			document.write("Autumn")
+	</script>
+</body>
+
+</html>
